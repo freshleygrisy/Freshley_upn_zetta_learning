@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Day 5</title>
+</head>
+<body>
+        <div style="display: flex;">
+            <div style="width:50% ;">
+                <h1>Registration Form</h1>
+                <label for="fname"> Name</label>
+                <form><input type="text" id="fname" placeholder="First Name"> 
+                <input type="text" id="lname" placeholder="Last Name"></form><br>
+                <label for="age">Age</label><br>
+                <input type="number" style="width:50px ;"><br><br>
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="phone"> Phone Number</label><br>
+                <input type="tel" name="phone" id="phone" placeholder="08.. ...."><br><br>
+                <label for="">Gender</label><br>
+                <input type="radio" name="gender" id="gender">
+                <label for="gender">Male</label> 
+                <input type="radio" name="gender" id="gender">
+                <label for="gender">Female</label><br><br>
+                <label for="">Profession</label><br>
+                <input type="radio" name="Profession" id="pf1">
+                <label for="pf1">student</label> <input type="radio" name="Profession" id="pf2"> <label for="pf2">worker</label><br><br>
+                <label for="">Agency</label><br>
+                <input type="text" placeholder="name of university or company" style="width:300px"><br><br>
+                <label for="">Skills</label><br>
+                <input type="checkbox" name="CSS" id="skill1">
+                <label for="skill1"> CSS</label><br>
+                <input type="checkbox" name="CSS" id="skill2">
+                <label for="skill2"> HTML</label><br>
+                <input type="checkbox" name="HTML" id="skill3">
+                <label for="skill3"> JavaScript</label><br><br>
+                <label for="homepage">Social Media Link</label><br>
+                <input type="url" id="homepage" name="homepage" style="width:400px ;"><br><br>
+                <label for="about">About You</label><br>
+                <textarea name="about" id="about" cols="50" rows="5"></textarea><br><br>
+                <label for="">Profile Picture </label><br>(choose your profile picture) <br>
+                <input type="file" src="./img.png" alt="submit your profile picture" height="30px"><br><br>
+                <form><input type="button" value="submit" ></form> <br><br>
+            </div>
+            <div style="width:50%;text-align:center;">
+                <h1> Output Registration</h1>
+                <img src="./photo.jpeg" alt="" height="20%"><br>
+                <span style="font-size:20px; font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Freshley Grisyuan Surya Kolim</span><br>
+                <span>Male</span><br>
+                <span>20 years old</span><br><br>
+                <span><b>Student</b> of <b>UPN "veteran" Yogyakarta</b></span><br><br>
+                <span>
+                    <li>CSS</li>
+                    <li>HTML</li>
+                    <li>JavaScript</li>
+                </span><br>
+                <span>" There's a lot of people who doesn't know the purpose of his life. I'm not one of them "</span><br>
+                <span><a href="instagram.com">Instagram</a></span><br>
+                <span>grisyuansurya@gmail.com</span><br>
+                <span><b>0831-6453-2696</b></span><br>
+
+            </div>
+        </div>
+        <details>
+            <summary>Page 2</summary>
+            <div style="width:150%;">
+                <h1 style="text-align:center ;">Output Registration Form</h1>
+                <style>
+                    table, th, td{
+                        border: 1px solid rgb(12, 9, 9);
+                    }
+                </style>
+                <table style="width: 100%; text-align: center;">
+                    <tr>
+                        <th>Name</th>
+                        <th>Profile Picture</th>
+                        <th>Age</th>
+                        <th>Email</th>
+                        <th>Phone Number </th>
+                        <th>Gender</th>
+                        <th>Profession</th>
+                        <th>Agency</th>
+                        <th>Skills</th>
+                        <th>Social Media Link</th>
+                        <th>About</th>
+                    </tr>
+                    <tr>
+                        <td>Freshley Grisyuan</td>
+                        <td style="text-align:center;"><img src="./photo.jpeg" alt="" height="40px" ></td>
+                        <td>20</td>
+                        <td>grisyuansurya@gmail.com</td>
+                        <td>083164532696</td>
+                        <td>Male</td>
+                        <td>Student</td>
+                        <td>UPN "veteran" Yogyakarta</td>
+                        <td style="width:90px; text-align: left;">
+                            <li>CSS</li>
+                            <li>HTML</li>
+                            <li>JavaScript</li>
+                        </td>
+                        <td>
+                            instagram.com
+                        </td>
+                        <td>
+                            there's a lot of people who doesn't know the purpose of his life. I'm not one of them
+                        </td>
+                    </tr>
+                </table>
+        </details>
+        
+
+        </div>
+    
+    
+    
+</body>
+</html>
