@@ -1,9 +1,10 @@
-
-
 .main{
+  display: flex;
+  flex-wrap: wrap;
   background-color: silver;
   max-width: 1200px;
   margin: 0 auto;
+  padding-top: 0;
 }
 
 *,*::before,*::after {
@@ -15,13 +16,9 @@ html {
   background-color: linear-gradient(to bottom left, #696162 40%, #e0d9d5 100%);
 }
 
-body {
-  color:linear-gradient(to bottom left, #696162 40%, #e0d9d5 100%);
-  font-family: 'Quicksand', serif;
-  font-style: normal;
-  font-weight: 400;
-  letter-spacing: 0;
-  padding: 1rem;
+nav{
+position: sticky;
+top: 0;
 }
 
 a{
@@ -67,6 +64,19 @@ h1{
   padding: 0;
 }
 
+.font1 .align{
+  font-style: oblique;
+  text-align: center;
+  border: 3px green;
+}
+
+.container{
+  display: grid;
+  height: 1000px;
+  overflow: scroll;
+  grid-template-columns: auto auto;
+}
+
 .cards_item {
   display: flex;
   padding: 1rem;
@@ -75,12 +85,6 @@ h1{
 @media (min-width: 40rem) {
   .cards_item {
     width: 50%;
-  }
-}
-
-@media (min-width: 56rem) {
-  .cards_item {
-    width: 33.3333%;
   }
 }
 
@@ -122,3 +126,5 @@ h1{
   margin-top: 0;
   text-align: center;
 }
+
+
