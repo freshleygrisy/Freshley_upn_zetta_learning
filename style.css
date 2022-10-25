@@ -1,0 +1,124 @@
+
+
+.main{
+  background-color: silver;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+*,*::before,*::after {
+  box-sizing: border-box;
+  color:rgb(28, 5, 5);
+}
+
+html {
+  background-color: linear-gradient(to bottom left, #696162 40%, #e0d9d5 100%);
+}
+
+body {
+  color:linear-gradient(to bottom left, #696162 40%, #e0d9d5 100%);
+  font-family: 'Quicksand', serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 1rem;
+}
+
+a{
+  text-decoration: none;
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+img {
+  height: 100%;
+  max-width: 100%;
+  vertical-align: middle;
+}
+h1{
+  text-align: center;
+  color: black;
+  font-size: 50px;
+  font-weight: 400;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-transform: capitalize;
+  background-color: silver;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.cards2 {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  line-height: 1rem;
+  padding: 0;
+}
+
+.cards3 {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}
+
+.card {
+  background: linear-gradient(to bottom left, #696162 40%, #e0d9d5 100%);
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card_content {
+  padding: 1rem;
+  background: linear-gradient(to bottom left, #696162 40%, #e0d9d5 100%);
+}
+
+.card_title {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+}
+
+.card_text {
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;    
+  font-weight: 400;
+}
+
+.footer{
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  margin-top: 0;
+  text-align: center;
+}
