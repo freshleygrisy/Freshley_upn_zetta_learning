@@ -1,0 +1,33 @@
+.card {
+    border-radius: 0.25rem;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background: linear-gradient(to bottom left, #696162 40%, #e0d9d5 100%);
+    transition: 0.3s;
+    width: 30%;
+    height: max-content;
+    margin-right: 10px;
+    margin-bottom: 40px;
+  }
+  
+  body{
+    display: grid;
+    min-height: 100vh;
+    margin: 0;
+    padding: 1rem;
+  }
+
+  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .card-content {
+    padding: 2px 16px;
+  }
+
+  .container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    text-align: center;
+    gap: 1rem;
+  }
