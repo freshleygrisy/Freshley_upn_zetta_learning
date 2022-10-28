@@ -1,4 +1,4 @@
-function book(bookdata, discount, tax, stock, purchase){
+function book(bookdata, discount, tax, stock, purchase, credit){
     let result = 0;
     let price1, amountdisc1, pricedisc1, amounttax1, pricetax1;
 
@@ -37,14 +37,27 @@ function book(bookdata, discount, tax, stock, purchase){
     console.log('Total               : ', result);
     console.groupEnd(); 
 
-    
+    const amountcredit = result/credit;
+    let credit1 = [];
+
+    for(let index = 0; index < credit; index++)
+    {
+        credit1[index] = amountcredit;
+        credit1.push(credit1[index]);
+    }
+
+    for(let i = 0; i < credit; i++)
+    {
+        console.log("month of - " + (i+1) + " = "+ credit1[i]);
+       
+    }    
     return result;
 }
 
-book({title : 'Ayah', price:99.999, printingstatus : true},10,5, 10, 1);
-book({title : 'Educated', price:120.999, printingstatus : true},10,5, 5, 1);
-book({title : 'Bicara itu Ada Seninya', price:99.999, printingstatus : true},10,5, 15, 1);
-book({title : 'Guru Aini', price:99.999, printingstatus : true},10,5, 6, 1);
-book({title : 'Laskar Pelangi', price:99.999, printingstatus : true},10,5, 7, 1);
-book({title : 'How to Talk with Strangers', price:120.000, printingstatus : true},10,5, 10, 1);
-book({title : 'Sebuah Seni Untuk Bersikap Bodoh Amat', price:89.999, printingstatus : true},10,5, 15, 1);
+book({title : 'Ayah', price:99.999, printingstatus : true},10,5, 10, 1,2);
+book({title : 'Educated', price:120.999, printingstatus : true},10,5, 5, 1,2);
+book({title : 'Bicara itu Ada Seninya', price:99.999, printingstatus : true},10,5, 15, 1,2);
+book({title : 'Guru Aini', price:99.999, printingstatus : true},10,5, 6, 1,2);
+book({title : 'Laskar Pelangi', price:99.999, printingstatus : true},10,5, 7, 1,2);
+book({title : 'How to Talk with Strangers', price:120.000, printingstatus : true},10,5, 10, 1,2);
+book({title : 'Sebuah Seni Untuk Bersikap Bodoh Amat', price:89.999, printingstatus : true},10,5, 15, 1,2);
