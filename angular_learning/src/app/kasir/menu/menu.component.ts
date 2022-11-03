@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit,EventEmitter,Output } from '@angular/core';
+import { item } from '../kasir/kasir.component';
 
 @Component({
   selector: 'app-menu',
@@ -6,10 +7,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu.component.scss']
 })
 export class MenuComponent implements OnInit {
+  @Input('items') items: item[]=[]
+  @Output ('itemAdded') onAddItem : EventEmitter<item> = new EventEmitter<item>()
 
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  addItem(item :item) : void{
+    this.onAddItem.emit(item)
   }
 
 }
